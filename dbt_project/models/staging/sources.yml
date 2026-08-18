@@ -1,0 +1,6 @@
+sources:
+  - name: raw
+    database: mi-dw-123456
+    schema: online_retail
+    tables:
+      - name: raw_online_retail

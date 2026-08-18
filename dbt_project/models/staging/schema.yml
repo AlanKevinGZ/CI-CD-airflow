@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: dim_customer
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+  - name: dim_product
+    columns:
+      - name: stock_code
+        tests:
+          - not_null
+  - name: dim_date
+    columns:
+      - name: date
+        tests:
+          - not_null
+          - unique
+  - name: fact_sales
+    columns:
+      - name: invoice_no
+        tests:
+          - not_null
+      - name: quantity
+        tests:
+          - not_null
+      - name: revenue
+        tests:
+          - not_null

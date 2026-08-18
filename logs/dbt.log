@@ -1,0 +1,194 @@
+[0m16:01:15.339471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4898a26270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e489acccb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e48973bb9d0>]}
+
+
+============================== 16:01:15.352413 | a52d37a3-8bf4-4881-9851-6e2c0b93605e ==============================
+[0m16:01:15.352413 [info ] [MainThread]: Running with dbt=1.12.2
+[0m16:01:15.352983 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'introspect': 'True', 'debug': 'False', 'empty': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'quiet': 'False', 'partial_parse': 'True', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'no_print': 'None', 'use_experimental_parser': 'False', 'profiles_dir': '/home/hades/.dbt', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'cache_selected_only': 'False', 'invocation_command': 'dbt init dbt_project', 'log_format': 'default', 'write_json': 'True', 'warn_error': 'None', 'target_path': 'None', 'hints_enabled': 'True'}
+[0m16:01:15.571709 [info ] [MainThread]: Creating dbt configuration folder at /home/hades/.dbt
+[0m16:01:15.595586 [debug] [MainThread]: Starter project path: /mnt/c/Users/hades/Documents/Crea tu portafolio como Data Engineer/Proyecto Personal/airflow-cicd/.venv/lib/python3.14/site-packages/dbt/include/starter_project
+[0m16:01:15.789905 [info ] [MainThread]: Setting up your profile.
+[0m16:12:09.254268 [info ] [MainThread]: Profile dbt_project written to /home/hades/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m16:12:09.281322 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m16:12:09.282244 [info ] [MainThread]: dbt version: 1.12.2
+[0m16:12:09.282773 [info ] [MainThread]: python version: 3.14.4
+[0m16:12:09.283374 [info ] [MainThread]: python path: /mnt/c/Users/hades/Documents/Crea tu portafolio como Data Engineer/Proyecto Personal/airflow-cicd/.venv/bin/python
+[0m16:12:09.283795 [info ] [MainThread]: os info: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m16:12:09.314692 [info ] [MainThread]: Using profiles dir at /home/hades/.dbt
+[0m16:12:09.315512 [info ] [MainThread]: Using profiles.yml file at /home/hades/.dbt/profiles.yml
+[0m16:12:09.316030 [info ] [MainThread]: Using dbt_project.yml file at /mnt/c/Users/hades/Documents/Crea tu portafolio como Data Engineer/Proyecto Personal/airflow-cicd/dbt_project/dbt_project.yml
+[0m16:12:09.316420 [info ] [MainThread]: adapter type: bigquery
+[0m16:12:09.316925 [info ] [MainThread]: adapter version: 1.12.0
+[0m16:12:09.368164 [info ] [MainThread]: Configuration:
+[0m16:12:09.369327 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:12:09.370080 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:12:09.370629 [info ] [MainThread]: Required dependencies:
+[0m16:12:09.371183 [debug] [MainThread]: Executing "git --help"
+[0m16:12:09.379467 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:12:09.380031 [debug] [MainThread]: STDERR: "b''"
+[0m16:12:09.380462 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:12:09.380922 [info ] [MainThread]: Connection:
+[0m16:12:09.381361 [info ] [MainThread]:   method: service-account
+[0m16:12:09.381766 [info ] [MainThread]:   database: mi-dw-123456
+[0m16:12:09.382176 [info ] [MainThread]:   execution_project: mi-dw-123456
+[0m16:12:09.382561 [info ] [MainThread]:   schema: online_retail
+[0m16:12:09.382996 [info ] [MainThread]:   location: US
+[0m16:12:09.383383 [info ] [MainThread]:   priority: interactive
+[0m16:12:09.383806 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:12:09.384199 [info ] [MainThread]:   reservation: None
+[0m16:12:09.384575 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:12:09.384985 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:12:09.385391 [info ] [MainThread]:   job_retries: 1
+[0m16:12:09.386073 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:12:09.386485 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m16:12:09.387009 [info ] [MainThread]:   job_link_info_level_log: False
+[0m16:12:09.387404 [info ] [MainThread]:   timeout_seconds: 300
+[0m16:12:09.387809 [info ] [MainThread]:   client_id: None
+[0m16:12:09.388507 [info ] [MainThread]:   token_uri: None
+[0m16:12:09.388902 [info ] [MainThread]:   compute_region: None
+[0m16:12:09.389284 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:12:09.389669 [info ] [MainThread]:   gcs_bucket: None
+[0m16:12:09.390021 [info ] [MainThread]:   dataproc_batch: None
+[0m16:12:09.391828 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m16:12:16.078311 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:12:16.078984 [debug] [MainThread]: On debug: select 1 as id
+[0m16:12:16.079616 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:12:17.079563 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mi-dw-123456&j=bq:US:b05b6b93-5dc5-42ce-89d1-02af1db1b0a5&page=queryresults
+[0m16:12:17.316918 [debug] [MainThread]: SQL status: OK in 0.236 seconds
+[0m16:12:20.229529 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:12:20.230947 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:12:20.231867 [info ] [MainThread]: Your new dbt project "dbt_project" was created!
+Initialized new project in /mnt/c/Users/hades/Documents/Crea tu portafolio como Data Engineer/Proyecto Personal/airflow-cicd/dbt_project/dbt_project
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:12:20.233012 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 664.96136, "process_in_blocks": "91304", "process_kernel_time": 1.145665, "process_mem_max_rss": "247900", "process_out_blocks": "8", "process_user_time": 3.687871}
+[0m16:12:20.233827 [debug] [MainThread]: Command `dbt init` succeeded at 16:12:20.233696 after 664.96 seconds
+[0m16:12:20.234551 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:12:20.235192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e48975f2ea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e48494b3bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e484970b790>]}
+[0m16:12:20.235646 [debug] [MainThread]: Flushing usage events
+[0m16:12:20.569556 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:14:03.429383 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc05966e270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc05b8c0b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc0580039d0>]}
+
+
+============================== 16:14:03.434931 | 3b09aeb3-618d-4b48-8936-049aeae03a21 ==============================
+[0m16:14:03.434931 [info ] [MainThread]: Running with dbt=1.12.2
+[0m16:14:03.435508 [debug] [MainThread]: running dbt with arguments {'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'log_format': 'default', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'write_json': 'True', 'target_path': 'None', 'introspect': 'True', 'no_print': 'None', 'profiles_dir': '/home/hades/.dbt', 'static_parser': 'True', 'log_path': 'logs', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'empty': 'None'}
+[0m16:14:03.530323 [info ] [MainThread]: dbt version: 1.12.2
+[0m16:14:03.530814 [info ] [MainThread]: python version: 3.14.4
+[0m16:14:03.531256 [info ] [MainThread]: python path: /mnt/c/Users/hades/Documents/Crea tu portafolio como Data Engineer/Proyecto Personal/airflow-cicd/.venv/bin/python
+[0m16:14:03.531720 [info ] [MainThread]: os info: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m16:14:07.623763 [info ] [MainThread]: Using profiles dir at /home/hades/.dbt
+[0m16:14:07.624441 [info ] [MainThread]: Using profiles.yml file at /home/hades/.dbt/profiles.yml
+[0m16:14:07.624909 [info ] [MainThread]: Using dbt_project.yml file at /mnt/c/Users/hades/Documents/Crea tu portafolio como Data Engineer/Proyecto Personal/airflow-cicd/dbt_project.yml
+[0m16:14:07.625365 [info ] [MainThread]: adapter type: bigquery
+[0m16:14:07.625781 [info ] [MainThread]: adapter version: 1.12.0
+[0m16:14:07.626324 [info ] [MainThread]: Configuration:
+[0m16:14:07.626743 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:14:07.627123 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:14:07.627502 [info ] [MainThread]: Required dependencies:
+[0m16:14:07.627919 [debug] [MainThread]: Executing "git --help"
+[0m16:14:07.629675 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:14:07.630193 [debug] [MainThread]: STDERR: "b''"
+[0m16:14:07.630564 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:14:07.630936 [info ] [MainThread]: Connection:
+[0m16:14:07.631334 [info ] [MainThread]:   method: service-account
+[0m16:14:07.631883 [info ] [MainThread]:   database: mi-dw-123456
+[0m16:14:07.632451 [info ] [MainThread]:   execution_project: mi-dw-123456
+[0m16:14:07.632880 [info ] [MainThread]:   schema: online_retail
+[0m16:14:07.633427 [info ] [MainThread]:   location: US
+[0m16:14:07.633850 [info ] [MainThread]:   priority: interactive
+[0m16:14:07.634280 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:14:07.634709 [info ] [MainThread]:   reservation: None
+[0m16:14:07.635066 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:14:07.635438 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:14:07.635830 [info ] [MainThread]:   job_retries: 1
+[0m16:14:07.636250 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:14:07.636628 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m16:14:07.637003 [info ] [MainThread]:   job_link_info_level_log: False
+[0m16:14:07.637371 [info ] [MainThread]:   timeout_seconds: 300
+[0m16:14:07.637733 [info ] [MainThread]:   client_id: None
+[0m16:14:07.638104 [info ] [MainThread]:   token_uri: None
+[0m16:14:07.638472 [info ] [MainThread]:   compute_region: None
+[0m16:14:07.638852 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:14:07.639204 [info ] [MainThread]:   gcs_bucket: None
+[0m16:14:07.639551 [info ] [MainThread]:   dataproc_batch: None
+[0m16:14:07.640901 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m16:14:13.969718 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:14:13.970410 [debug] [MainThread]: On debug: select 1 as id
+[0m16:14:13.971034 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:14:14.954886 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mi-dw-123456&j=bq:US:42310dd4-4e54-44b5-82d0-9e59ca6ed7c1&page=queryresults
+[0m16:14:15.217975 [debug] [MainThread]: SQL status: OK in 0.262 seconds
+[0m16:14:16.643121 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:14:16.643904 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:14:16.644387 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </mnt/c/Users/hades/Documents/Crea tu portafolio como Data Engineer/Proyecto Personal/airflow-cicd/dbt_project.yml> not found
+
+[0m16:14:16.645046 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 13.258112, "process_in_blocks": "79749", "process_kernel_time": 1.09298, "process_mem_max_rss": "245692", "process_out_blocks": "8", "process_user_time": 3.497536}
+[0m16:14:16.645561 [debug] [MainThread]: Command `dbt debug` failed at 16:14:16.645469 after 13.26 seconds
+[0m16:14:16.646017 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:14:16.646536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc00a1adba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc00a3b3ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc00a2d0490>]}
+[0m16:14:16.647014 [debug] [MainThread]: Flushing usage events
+[0m16:14:17.013914 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:59:53.829931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7304708d2270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7304728bcb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73046f0d7890>]}
+
+
+============================== 18:59:53.841368 | 4720ae50-e1b0-4e7d-92a8-20af95166ea2 ==============================
+[0m18:59:53.841368 [info ] [MainThread]: Running with dbt=1.12.2
+[0m18:59:53.842169 [debug] [MainThread]: running dbt with arguments {'log_path': 'logs', 'empty': 'False', 'partial_parse': 'True', 'invocation_command': 'dbt run --select dim_date', 'log_cache_events': 'False', 'use_colors': 'True', 'printer_width': '80', 'warn_error': 'None', 'debug': 'False', 'use_experimental_parser': 'False', 'maximum_seed_size_mib': '1', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'fail_fast': 'False', 'profiles_dir': '/home/hades/.dbt', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'cache_selected_only': 'False', 'no_print': 'None', 'hints_enabled': 'True', 'log_format': 'default'}
+[0m18:59:53.842869 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /mnt/c/Users/hades/Documents/Crea tu portafolio como Data Engineer/Proyecto Personal/airflow-cicd/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:59:53.844478 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.062220562, "process_in_blocks": "67368", "process_kernel_time": 0.404895, "process_mem_max_rss": "121488", "process_out_blocks": "0", "process_user_time": 0.825825}
+[0m18:59:53.845002 [debug] [MainThread]: Command `dbt run` failed at 18:59:53.844921 after 0.06 seconds
+[0m18:59:53.845424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73046f094b00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73046f0768d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73046ef19bf0>]}
+[0m18:59:53.845895 [debug] [MainThread]: Flushing usage events
+[0m18:59:54.233167 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:00:09.988117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a015543e270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a015745ccd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0153c37890>]}
+
+
+============================== 19:00:09.993655 | d1e9b1f2-bbcf-4487-a6a4-093e826306fe ==============================
+[0m19:00:09.993655 [info ] [MainThread]: Running with dbt=1.12.2
+[0m19:00:09.994244 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'static_parser': 'True', 'version_check': 'True', 'profiles_dir': '/home/hades/.dbt', 'warn_error': 'None', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'no_print': 'None', 'quiet': 'False', 'target_path': 'None', 'debug': 'False', 'write_json': 'True', 'invocation_command': 'dbt run --select dim_date', 'empty': 'False', 'hints_enabled': 'True', 'use_experimental_parser': 'False', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'log_path': 'logs'}
+[0m19:00:09.994858 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /mnt/c/Users/hades/Documents/Crea tu portafolio como Data Engineer/Proyecto Personal/airflow-cicd/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:00:09.996247 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.048359264, "process_in_blocks": "36960", "process_kernel_time": 0.324302, "process_mem_max_rss": "121508", "process_out_blocks": "0", "process_user_time": 0.795621}
+[0m19:00:09.996741 [debug] [MainThread]: Command `dbt run` failed at 19:00:09.996663 after 0.05 seconds
+[0m19:00:09.997121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0153bfcb00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0153bde8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a0153a81bf0>]}
+[0m19:00:09.997540 [debug] [MainThread]: Flushing usage events
+[0m19:00:10.328975 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:46:42.991326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ccac891e270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ccacab70b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ccac711b9d0>]}
+
+
+============================== 19:46:42.998781 | f7bd90de-7517-4e55-8dd4-21e6a7ded86b ==============================
+[0m19:46:42.998781 [info ] [MainThread]: Running with dbt=1.12.2
+[0m19:46:42.999424 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'version_check': 'True', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'warn_error': 'None', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'empty': 'None', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_cache_events': 'False', 'quiet': 'False', 'log_path': 'logs', 'log_format': 'default', 'printer_width': '80', 'write_json': 'True', 'hints_enabled': 'True', 'profiles_dir': '/home/hades/.dbt', 'cache_selected_only': 'False', 'invocation_command': 'dbt docs generate', 'indirect_selection': 'eager', 'fail_fast': 'False', 'partial_parse': 'True'}
+[0m19:46:43.000360 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /mnt/c/Users/hades/Documents/Crea tu portafolio como Data Engineer/Proyecto Personal/airflow-cicd/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:46:43.002354 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": false, "command_wall_clock_time": 0.06111779, "process_in_blocks": "48528", "process_kernel_time": 0.349031, "process_mem_max_rss": "121392", "process_out_blocks": "0", "process_user_time": 0.804097}
+[0m19:46:43.002961 [debug] [MainThread]: Command `dbt docs generate` failed at 19:46:43.002892 after 0.06 seconds
+[0m19:46:43.003427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ccac72dcc30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ccac72be8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ccac7165bf0>]}
+[0m19:46:43.003967 [debug] [MainThread]: Flushing usage events
+[0m19:46:43.358628 [debug] [MainThread]: An error was encountered while trying to flush usage events
